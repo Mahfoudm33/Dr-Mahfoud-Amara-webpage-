@@ -8,22 +8,24 @@
     /* ── Reset & base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --clr-bg: #0a0a0f;
-      --clr-surface: #111118;
-      --clr-card: #16161f;
-      --clr-border: #2a2a3a;
-      --clr-accent: #6c63ff;
-      --clr-accent2: #a78bfa;
-      --clr-text: #e2e2ef;
-      --clr-muted: #8888aa;
-      --clr-tv: #f59e0b;
-      --clr-radio: #10b981;
-      --clr-press: #3b82f6;
-      --clr-en: #6c63ff;
-      --clr-fr: #ec4899;
-      --clr-ar: #f59e0b;
+      --clr-bg: #0b0f1a;
+      --clr-surface: #0f1420;
+      --clr-card: #141a28;
+      --clr-border: #1e2a3a;
+      --clr-accent: #8b1a2f;
+      --clr-accent2: #c0392b;
+      --clr-accent-light: #e85d6a;
+      --clr-gold: #c9a84c;
+      --clr-text: #e8ecf0;
+      --clr-muted: #7a8a9a;
+      --clr-tv: #c9a84c;
+      --clr-radio: #3d9970;
+      --clr-press: #2980b9;
+      --clr-en: #5b8dd9;
+      --clr-fr: #c0392b;
+      --clr-ar: #c9a84c;
       --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      --radius: 12px;
+      --radius: 10px;
     }
     html { scroll-behavior: smooth; }
     body {
@@ -37,21 +39,21 @@
     /* ── Nav ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(10,10,15,0.92);
+      background: rgba(11,15,26,0.95);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--clr-border);
       padding: 0 2rem;
       display: flex; align-items: center; justify-content: space-between;
       height: 60px;
     }
-    .nav-brand { font-weight: 700; font-size: 1.1rem; color: var(--clr-accent2); text-decoration: none; }
+    .nav-brand { font-weight: 700; font-size: 1.1rem; color: var(--clr-gold); text-decoration: none; }
     .nav-links { display: flex; gap: 1.5rem; list-style: none; }
     .nav-links a { color: var(--clr-muted); text-decoration: none; font-size: 0.88rem; transition: color .2s; }
     .nav-links a:hover, .nav-links a.active { color: var(--clr-text); }
 
     /* ── Hero ── */
     .hero {
-      background: linear-gradient(135deg, #0d0d1a 0%, #1a1030 50%, #0a0a0f 100%);
+      background: linear-gradient(135deg, #080c16 0%, #0f1828 50%, #0b0f1a 100%);
       border-bottom: 1px solid var(--clr-border);
       padding: 4rem 2rem 3rem;
       text-align: center;
@@ -64,7 +66,7 @@
     section { margin-bottom: 3.5rem; }
     h2 {
       font-size: 1.3rem; font-weight: 700;
-      color: var(--clr-accent2);
+      color: var(--clr-gold);
       border-bottom: 2px solid var(--clr-border);
       padding-bottom: .5rem;
       margin-bottom: 1.5rem;
@@ -82,10 +84,10 @@
       display: flex; flex-direction: column; gap: .35rem;
       transition: border-color .2s, transform .15s;
     }
-    .media-item:hover { border-color: var(--clr-accent); transform: translateX(4px); }
+    .media-item:hover { border-color: var(--clr-accent2); transform: translateX(4px); }
     .media-item-title { font-size: .95rem; color: var(--clr-text); font-weight: 500; }
     .media-item-meta { font-size: .82rem; color: var(--clr-muted); }
-    .media-item a { color: var(--clr-accent2); text-decoration: none; font-size: .85rem; width: fit-content; }
+    .media-item a { color: var(--clr-accent-light); text-decoration: none; font-size: .85rem; width: fit-content; }
     .media-item a:hover { text-decoration: underline; }
 
     /* Badge chips */
@@ -118,7 +120,7 @@
     .info-box {
       background: var(--clr-card);
       border: 1px solid var(--clr-border);
-      border-left: 4px solid var(--clr-accent);
+      border-left: 4px solid var(--clr-accent2);
       border-radius: var(--radius);
       padding: 1.3rem 1.5rem;
     }
@@ -143,7 +145,7 @@
     /* ── Back to top ── */
     .back-top {
       position: fixed; bottom: 1.5rem; right: 1.5rem;
-      background: var(--clr-accent); color: #fff;
+      background: var(--clr-accent2); color: #fff;
       border: none; border-radius: 50%; width: 40px; height: 40px;
       font-size: 1.1rem; cursor: pointer; opacity: .8;
     }
