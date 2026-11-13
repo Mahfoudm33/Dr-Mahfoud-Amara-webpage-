@@ -21,7 +21,6 @@ Static HTML/CSS/JS academic website for Dr. Mahfoud Amara, Associate Professor i
    - `world-cup-2022.html`
    - `conferences.html`
    - `research.html`
-   - `phd-supervision.html`
    - `media.html`
    - `contact.html`
    - `assets/` folder (with all CSS, JS, and image files)
@@ -61,7 +60,6 @@ mamara-website/
 ├── world-cup-2022.html     ← Qatar 2022 research
 ├── conferences.html        ← Conference presentations
 ├── research.html           ← Research projects & funding
-├── phd-supervision.html    ← PhD students & examinations
 ├── media.html              ← Media coverage (EN/FR/AR)
 ├── contact.html            ← Contact & academic profiles
 ├── README.md               ← This file
